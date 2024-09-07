@@ -1,4 +1,3 @@
-import { asyncWrapper } from "./../utils";
 import express from "express";
 import { CategoryController } from "./category-controller";
 import categoryValidator from "./category-validator";
@@ -7,6 +6,7 @@ import logger from "../config/logger";
 import authenticate from "../common/middleware/authenticate";
 import { canAccess } from "../common/middleware/canAccess";
 import { Roles } from "../common/constants";
+import { asyncWrapper } from "../utils";
 
 const router = express.Router();
 
